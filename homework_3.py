@@ -61,13 +61,33 @@ print('Написать функцию, которая принимает 3 ар
 def more_func(a, b, c):
         
         if a > c and b > c:
-                return a, b
+                print(a, b)
         elif a > b and c > b:
-                return a, c
+                print(a, c)
         elif b > a and c > a:
-                return b, c
+                print(b, c)
 
 # Program №5
 
 print('Написать функцию, которая принимает два аргумента. Первый - список чисел, второй - булевый флаг. Если флаг действителен - возвращаем новый список с нечетными числами из входного списка, если флаг отрицателен - возвращаем новый список с четными числами из входного списка')
 
+def number_filter(list_num, flag):
+          if flag == False:
+                even_list = []
+                for i in list_num:
+                    if i % 2 == 0 and i != 0:
+                        even_list.append(i)
+                    return even_list
+          else:
+                odd_list = []
+                for i in list_num:
+                    if i % 2 != 0:
+                        odd_list.append(i)
+                return odd_list
+
+# Program №6
+
+print(' Написать функцию, которая принимает любое количество аргументов чисел. Среди них она находит максимальное и минимальное. И возвращает оба ')
+
+
+                
